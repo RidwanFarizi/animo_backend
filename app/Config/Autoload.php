@@ -8,7 +8,10 @@ use CodeIgniter\Config\AutoloadConfig;
  * -------------------------------------------------------------------
  * AUTO-LOADER
  * -------------------------------------------------------------------
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
  * This file defines the namespaces and class maps so the Autoloader
  * can find the files as needed.
  *
@@ -17,6 +20,10 @@ use CodeIgniter\Config\AutoloadConfig;
  */
 class Autoload extends AutoloadConfig
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	/**
 	 * -------------------------------------------------------------------
 	 * Namespaces
@@ -37,7 +44,11 @@ class Autoload extends AutoloadConfig
 	 *       'App'	       => APPPATH
 	 *   ];
 	 *
+<<<<<<< HEAD
 	 * @var array<string, string>
+=======
+	 * @var array
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	 */
 	public $psr4 = [
 		APP_NAMESPACE => APPPATH, // For custom app namespace
@@ -60,7 +71,11 @@ class Autoload extends AutoloadConfig
 	 *       'MyClass'   => '/path/to/class/file.php'
 	 *   ];
 	 *
+<<<<<<< HEAD
 	 * @var array<string, string>
+=======
+	 * @var array
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	 */
 	public $classmap = [];
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace Config;
@@ -30,10 +31,31 @@ class Filters extends BaseConfig
 	public $globals = [
 		'before' => [
 			// 'honeypot',
+=======
+<?php namespace Config;
+
+use CodeIgniter\Config\BaseConfig;
+
+class Filters extends BaseConfig
+{
+	// Makes reading things below nicer,
+	// and simpler to change out script that's used.
+	public $aliases = [
+		'csrf'     => \CodeIgniter\Filters\CSRF::class,
+		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
+		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
+	];
+
+	// Always applied before every request
+	public $globals = [
+		'before' => [
+			//'honeypot'
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 			// 'csrf',
 		],
 		'after'  => [
 			'toolbar',
+<<<<<<< HEAD
 			// 'honeypot',
 		],
 	];
@@ -58,5 +80,19 @@ class Filters extends BaseConfig
 	 *
 	 * @var array
 	 */
+=======
+			//'honeypot'
+		],
+	];
+
+	// Works on all of a particular HTTP method
+	// (GET, POST, etc) as BEFORE filters only
+	//     like: 'post' => ['CSRF', 'throttle'],
+	public $methods = [];
+
+	// List filter aliases and any before/after uri patterns
+	// that they should run on, like:
+	//    'isLoggedIn' => ['before' => ['account/*', 'profiles/*']],
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	public $filters = [];
 }
