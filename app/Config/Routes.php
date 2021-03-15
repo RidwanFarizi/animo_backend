@@ -42,9 +42,12 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 <<<<<<< HEAD
+<<<<<<< HEAD
 $routes->get('/Dashboard', 'Dashboard::index');
 /*
 =======
+=======
+>>>>>>> parent of 7805134 (Merge pull request #4 from davidarment1421/main)
 
 /**
 >>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
