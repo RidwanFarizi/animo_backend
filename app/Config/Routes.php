@@ -43,9 +43,12 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 $routes->get('/Dashboard', 'Dashboard::index');
 /*
 =======
+=======
+>>>>>>> parent of 7805134 (Merge pull request #4 from davidarment1421/main)
 =======
 >>>>>>> parent of 7805134 (Merge pull request #4 from davidarment1421/main)
 
