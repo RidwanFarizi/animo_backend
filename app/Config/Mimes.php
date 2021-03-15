@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+<?php
+
+namespace Config;
+
+/**
+ * Mimes
+ *
+ * This file contains an array of mime types.  It is used by the
+ * Upload class to help identify allowed file types.
+ *
+ * When more than one variation for an extension exist (like jpg, jpeg, etc)
+ * the most common one should be first in the array to aid the guess*
+ * methods. The same applies when more than one mime-type exists for a
+ * single extension.
+ *
+ * When working with mime types, please make sure you have the ´fileinfo´
+ * extension enabled to reliably detect the media types.
+ */
+
+=======
 <?php namespace Config;
 
 /*
@@ -13,6 +34,7 @@
 | single extension.
 |
 */
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 class Mimes
 {
 	/**
@@ -32,7 +54,10 @@ class Mimes
 			'text/csv',
 			'text/x-comma-separated-values',
 			'text/comma-separated-values',
+<<<<<<< HEAD
+=======
 			'application/octet-stream',
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 			'application/vnd.ms-excel',
 			'application/x-csv',
 			'text/x-csv',
@@ -68,7 +93,10 @@ class Mimes
 			'application/pdf',
 			'application/force-download',
 			'application/x-download',
+<<<<<<< HEAD
+=======
 			'binary/octet-stream',
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 		],
 		'ai'    => [
 			'application/pdf',
@@ -147,6 +175,10 @@ class Mimes
 			'multipart/x-zip',
 		],
 		'rar'   => [
+<<<<<<< HEAD
+			'application/vnd.rar',
+=======
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 			'application/x-rar',
 			'application/rar',
 			'application/x-rar-compressed',
@@ -453,6 +485,10 @@ class Mimes
 		],
 		'svg'   => [
 			'image/svg+xml',
+<<<<<<< HEAD
+			'image/svg',
+=======
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 			'application/xml',
 			'text/xml',
 		],
@@ -470,10 +506,20 @@ class Mimes
 			'image/x-ico',
 			'image/vnd.microsoft.icon',
 		],
+<<<<<<< HEAD
+		'stl'   => [
+			'application/sla',
+			'application/vnd.ms-pki.stl',
+			'application/x-navistyle',
+		],
+	];
+
+=======
 	];
 
 	//--------------------------------------------------------------------
 
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	/**
 	 * Attempts to determine the best mime type for the given file extension.
 	 *
@@ -493,6 +539,39 @@ class Mimes
 		return is_array(static::$mimes[$extension]) ? static::$mimes[$extension][0] : static::$mimes[$extension];
 	}
 
+<<<<<<< HEAD
+	/**
+	 * Attempts to determine the best file extension for a given mime type.
+	 *
+	 * @param string      $type
+	 * @param string|null $proposedExtension - default extension (in case there is more than one with the same mime type)
+	 *
+	 * @return string|null The extension determined, or null if unable to match.
+	 */
+	public static function guessExtensionFromType(string $type, string $proposedExtension = null)
+	{
+		$type = trim(strtolower($type), '. ');
+
+		$proposedExtension = trim(strtolower($proposedExtension));
+
+		if ($proposedExtension !== '')
+		{
+			if (array_key_exists($proposedExtension, static::$mimes) && in_array($type, is_string(static::$mimes[$proposedExtension]) ? [static::$mimes[$proposedExtension]] : static::$mimes[$proposedExtension], true))
+			{
+				// The detected mime type matches with the proposed extension.
+				return $proposedExtension;
+			}
+
+			// An extension was proposed, but the media type does not match the mime type list.
+			return null;
+		}
+
+		// Reverse check the mime type list if no extension was proposed.
+		// This search is order sensitive!
+		foreach (static::$mimes as $ext => $types)
+		{
+			if ((is_string($types) && $types === $type) || (is_array($types) && in_array($type, $types, true)))
+=======
 	//--------------------------------------------------------------------
 
 	/**
@@ -517,6 +596,7 @@ class Mimes
 		foreach (static::$mimes as $ext => $types)
 		{
 			if ((is_string($types) && $types === $type) || (is_array($types) && in_array($type, $types)))
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 			{
 				return $ext;
 			}
@@ -524,7 +604,10 @@ class Mimes
 
 		return null;
 	}
+<<<<<<< HEAD
+=======
 
 	//--------------------------------------------------------------------
 
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 }

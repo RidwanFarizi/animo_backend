@@ -1,11 +1,18 @@
 <?php
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	/**
 	 * @var string
 	 */

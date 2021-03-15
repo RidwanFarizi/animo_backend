@@ -15,7 +15,11 @@ namespace App\Controllers;
  */
 
 use CodeIgniter\Controller;
+<<<<<<< HEAD
+use CodeIgniter\I18n\Time;
+=======
 
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 class BaseController extends Controller
 {
 
@@ -37,7 +41,13 @@ class BaseController extends Controller
 		parent::initController($request, $response, $logger);
 		
 		// load model
+<<<<<<< HEAD
+		$this->Bahan = new \App\Models\contohClass();
+		$this->Dashboard = new \App\Models\Dashboard_model();
+		$this->session = session();
+=======
 		$this->User = new \App\Models\contohClass();
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	}
 
 	public function sendEmail($fromEmail, $from, $to, $subject=null, $message=null){

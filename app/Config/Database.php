@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+<?php
+
+namespace Config;
+
+use CodeIgniter\Database\Config;
+
+/**
+ * Database Configuration
+ */
+class Database extends Config
+=======
 <?php namespace Config;
 
 /**
@@ -7,6 +19,7 @@
  */
 
 class Database extends \CodeIgniter\Database\Config
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 {
 	/**
 	 * The directory that holds the Migrations
@@ -14,7 +27,11 @@ class Database extends \CodeIgniter\Database\Config
 	 *
 	 * @var string
 	 */
+<<<<<<< HEAD
+	public $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
+=======
 	public $filesPath = APPPATH . 'Database/';
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 
 	/**
 	 * Lets you choose which connection group to
@@ -32,15 +49,24 @@ class Database extends \CodeIgniter\Database\Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
+<<<<<<< HEAD
+		'username' => 'root',
+		'password' => '',
+		'database' => 'autz8571_animo_development_new_1',
+=======
 		'username' => '',
 		'password' => '',
 		'database' => '',
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
+<<<<<<< HEAD
+=======
 		'cacheOn'  => false,
 		'cacheDir' => '',
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 		'charset'  => 'utf8',
 		'DBCollat' => 'utf8_general_ci',
 		'swapPre'  => '',
@@ -67,8 +93,11 @@ class Database extends \CodeIgniter\Database\Config
 		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
+<<<<<<< HEAD
+=======
 		'cacheOn'  => false,
 		'cacheDir' => '',
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 		'charset'  => 'utf8',
 		'DBCollat' => 'utf8_general_ci',
 		'swapPre'  => '',
@@ -91,6 +120,8 @@ class Database extends \CodeIgniter\Database\Config
 		if (ENVIRONMENT === 'testing')
 		{
 			$this->defaultGroup = 'tests';
+<<<<<<< HEAD
+=======
 
 			// Under Travis-CI, we can set an ENV var named 'DB_GROUP'
 			// so that we can test against multiple databases.
@@ -106,6 +137,7 @@ class Database extends \CodeIgniter\Database\Config
 					}
 				}
 			}
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 		}
 	}
 

@@ -9,7 +9,11 @@
  * This content is released under the MIT License (MIT)
  *
  * Copyright (c) 2014-2019 British Columbia Institute of Technology
+<<<<<<< HEAD
+ * Copyright (c) 2019-2021 CodeIgniter Foundation
+=======
  * Copyright (c) 2019-2020 CodeIgniter Foundation
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +35,11 @@
  *
  * @package    CodeIgniter
  * @author     CodeIgniter Dev Team
+<<<<<<< HEAD
+ * @copyright  2019-2021 CodeIgniter Foundation
+=======
  * @copyright  2019-2020 CodeIgniter Foundation
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
  * @license    https://opensource.org/licenses/MIT	MIT License
  * @link       https://codeigniter.com
  * @since      Version 4.0.0

@@ -7,12 +7,20 @@ use to test your application. Those details can be found in the documentation.
 
 ## Resources
 * [CodeIgniter 4 User Guide on Testing](https://codeigniter4.github.io/userguide/testing/index.html)
+<<<<<<< HEAD
+* [PHPUnit docs](https://phpunit.readthedocs.io/en/8.5/index.html)
+=======
 * [PHPUnit docs](https://phpunit.readthedocs.io/en/8.3/index.html)
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 
 ## Requirements
 
 It is recommended to use the latest version of PHPUnit. At the time of this 
+<<<<<<< HEAD
+writing we are running version 8.5.13. Support for this has been built into the 
+=======
 writing we are running version 8.5.2. Support for this has been built into the 
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 **composer.json** file that ships with CodeIgniter and can easily be installed 
 via [Composer](https://getcomposer.org/) if you don't already have it installed globally.
 

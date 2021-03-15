@@ -1,12 +1,33 @@
+<<<<<<< HEAD
+<?php
+
+namespace Config;
+=======
 <?php namespace Config;
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 
 use CodeIgniter\Config\BaseConfig;
 use Kint\Renderer\Renderer;
 
+<<<<<<< HEAD
+/**
+ * --------------------------------------------------------------------------
+ * Kint
+ * --------------------------------------------------------------------------
+ *
+ * We use Kint's `RichRenderer` and `CLIRenderer`. This area contains options
+ * that you can set to customize how Kint works for you.
+ *
+ * @see https://kint-php.github.io/kint/ for details on these settings.
+ */
+=======
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 class Kint extends BaseConfig
 {
 	/*
 	|--------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
 	| Kint
 	|--------------------------------------------------------------------------
 	|
@@ -20,6 +41,7 @@ class Kint extends BaseConfig
 
 	/*
 	|--------------------------------------------------------------------------
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	| Global Settings
 	|--------------------------------------------------------------------------
 	*/

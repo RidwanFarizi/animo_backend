@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+<?php
+
+namespace Config;
+=======
 <?php namespace Config;
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 
 use CodeIgniter\Events\Events;
 use CodeIgniter\Exceptions\FrameworkException;
@@ -44,7 +50,11 @@ Events::on('pre_system', function () {
 	 * --------------------------------------------------------------------
 	 * If you delete, they will no longer be collected.
 	 */
+<<<<<<< HEAD
+	if (CI_DEBUG)
+=======
 	if (ENVIRONMENT !== 'production')
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 	{
 		Events::on('DBQuery', 'CodeIgniter\Debug\Toolbar\Collectors\Database::collect');
 		Services::toolbar()->respond();

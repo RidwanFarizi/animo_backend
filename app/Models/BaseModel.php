@@ -5,6 +5,10 @@ use CodeIgniter\Model;
 
 class BaseModel extends Model
 {
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
     /**
      * Method untuk mendapatkan data
      * 
@@ -192,7 +196,11 @@ class BaseModel extends Model
      */  
     public function rollbackUpdate($id, $currData)
     {
+<<<<<<< HEAD
+        $data = $this->getCourseDaftar(['id'=>$id]);
+=======
         $data = $this->getData(['id'=>$id]);
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
         $dateNow = date('Y-m-d H:i:s');
         $dateAgo = date('Y-m-d H:i:s', strtotime($dateNow.' - 5 minutes'));
 
@@ -239,7 +247,11 @@ class BaseModel extends Model
     public function rollbackDelete($id)
     {
         $currData = ['deleteDate' => null];
+<<<<<<< HEAD
+        $data = $this->getCourseDaftar(['id'=>$id]);
+=======
         $data = $this->getData(['id'=>$id]);
+>>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
         $dateNow = date('Y-m-d H:i:s');
         $dateAgo = date('Y-m-d H:i:s', strtotime($dateNow.' - 5 minutes'));
 
