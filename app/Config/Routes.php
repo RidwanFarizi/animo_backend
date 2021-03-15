@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<?php
-
-namespace Config;
-=======
 <?php namespace Config;
->>>>>>> 2206b45ffdcaecf8ef3b62fba789559199669c20
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -37,7 +31,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/Dashboard', 'Dashboard::index');
+$routes->get('/dashboard', 'Dashboard::index', ['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing
