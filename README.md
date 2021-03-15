@@ -1,3 +1,11 @@
+# I did an oopsie
+Branch ini tidak dipakai lagi, hanya sebagai history.
+Aku melakukan kesalahan melakukan merge dari repository Rivan, yang ternyata terdapat banyak konflik kemungkinan karena beda versi php atau CI4 nya. Maaf gaes
+
+Kesalahan merge terjadi pada commit id a6d294576a30f37b92edb72f710467cd74b160ce, lalu aku coba perbaiki pada commit id dfee49be1cb3710e2da941caad7fb1ac5274602c, tapi makin kacau. 
+Jadi aku bikin branch baru dengan nama **main**, lalu aku ubah nama branch ini menjadi **I-did-an-oopsie,-merging-conflict-files**
+
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
